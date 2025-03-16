@@ -472,23 +472,46 @@ footer #tzine-actions iframe {
 }  
 </style>  
 <body> 
+<center><h3 style="
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #f06, #48c6ef, #f06, #48c6ef);
+  background-size: 300% 300%;
+  text-align: center;
+  padding: 25px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  font-size: 2.8em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: inline-block;
+  animation: gradientShift 6s infinite ease-in-out, float 4s infinite ease-in-out;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+">
+  Samia Islam SAFA
+</h3></center>
 
+<style>
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
 
-
-
-
-
-<h1 style="font-family: 'Arial', sans-serif; color: #fff; background: linear-gradient(135deg, #f06, #48c6ef); text-align: center; padding: 20px; border-radius: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); font-size: 2.5em; text-transform: uppercase; letter-spacing: 2px; display: inline-block; animation: pulse 2s infinite ease-in-out;">Samia Islam SAFA</h1>
-
-
-
-
-
-
-
-
-
+  h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+  }
+</style>
 <script>  
 $(function() {  
     var clock = $('#clock'),  
